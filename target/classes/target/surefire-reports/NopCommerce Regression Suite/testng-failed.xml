@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [NopCommerce Regression Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="Browser" value="Chrome"/>
+  <test thread-count="5" name="Regression Test(failed)" verbose="0">
+    <classes>
+      <class name="tests.AddProductReviewTest">
+        <methods>
+          <include name="ScreenShotonFailure"/>
+          <include name="StopDriver"/>
+          <include name="StartDriver"/>
+          <include name="UserCanAddReview"/>
+        </methods>
+      </class> <!-- tests.AddProductReviewTest -->
+      <class name="tests.AddProductToWishListTest">
+        <methods>
+          <include name="ScreenShotonFailure"/>
+          <include name="StopDriver"/>
+          <include name="StartDriver"/>
+          <include name="AddItemToWishListTest"/>
+          <include name="addtowhishlisttest"/>
+        </methods>
+      </class> <!-- tests.AddProductToWishListTest -->
+      <class name="tests.AddProducttoCompareTest">
+        <methods>
+          <include name="ScreenShotonFailure"/>
+          <include name="StopDriver"/>
+          <include name="ClearCompareList"/>
+          <include name="StartDriver"/>
+        </methods>
+      </class> <!-- tests.AddProducttoCompareTest -->
+      <class name="tests.AddProductToShoppingCartTest">
+        <methods>
+          <include name="ScreenShotonFailure"/>
+          <include name="StopDriver"/>
+          <include name="RemoveProductsFromTheshoppingCart"/>
+          <include name="AddProductTotheShoppingCart"/>
+          <include name="UpdatethequantityofProductinshoppingCart"/>
+          <include name="StartDriver"/>
+        </methods>
+      </class> <!-- tests.AddProductToShoppingCartTest -->
+    </classes>
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [NopCommerce Regression Suite] -->

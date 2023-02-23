@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [NopCommerce Regression Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="Browser" value="Chrome"/>
+  <test thread-count="5" name="Regression Test(failed)">
+    <classes>
+      <class name="tests.MyAccountTest">
+        <methods>
+          <include name="UserChangePasswordSuccessfully"/>
+          <include name="UserCanRegisterSuccsefullty"/>
+          <include name="ScreenShotonFailure"/>
+          <include name="StopDriver"/>
+          <include name="UserCanLoginWithTheNewPassword"/>
+          <include name="UserCanLogOutAfterChangePassword"/>
+          <include name="StartDriver"/>
+          <include name="UserCanLoginSuccessfully"/>
+        </methods>
+      </class> <!-- tests.MyAccountTest -->
+      <class name="tests.EmailFriendTest">
+        <methods>
+          <include name="USerCanSearchForProductwithAutoSuggest"/>
+          <include name="UserCanLogOut"/>
+          <include name="ScreenShotonFailure"/>
+          <include name="UserCanRegisterSuccessfully"/>
+          <include name="StopDriver"/>
+          <include name="UserCanLogin"/>
+          <include name="StartDriver"/>
+          <include name="UserCanSendaProductToaFriend"/>
+        </methods>
+      </class> <!-- tests.EmailFriendTest -->
+      <class name="tests.ProductHooverMenuTest">
+        <methods>
+          <include name="UserCanopenNoteBooksMenu"/>
+          <include name="ScreenShotonFailure"/>
+          <include name="StopDriver"/>
+          <include name="StartDriver"/>
+        </methods>
+      </class> <!-- tests.ProductHooverMenuTest -->
+      <class name="tests.AddProductToWishListTest">
+        <methods>
+          <include name="ScreenShotonFailure"/>
+          <include name="StopDriver"/>
+          <include name="StartDriver"/>
+          <include name="AddItemToWishListTest"/>
+          <include name="addtowhishlisttest"/>
+        </methods>
+      </class> <!-- tests.AddProductToWishListTest -->
+      <class name="tests.ChangeCurrencyTest">
+        <methods>
+          <include name="UserCanSearchByAutoSuggestion"/>
+          <include name="ScreenShotonFailure"/>
+          <include name="StopDriver"/>
+          <include name="StartDriver"/>
+        </methods>
+      </class> <!-- tests.ChangeCurrencyTest -->
+      <class name="tests.AddProductToShoppingCartTest">
+        <methods>
+          <include name="ScreenShotonFailure"/>
+          <include name="StopDriver"/>
+          <include name="RemoveProductsFromTheshoppingCart"/>
+          <include name="AddProductTotheShoppingCart"/>
+          <include name="UpdatethequantityofProductinshoppingCart"/>
+          <include name="StartDriver"/>
+        </methods>
+      </class> <!-- tests.AddProductToShoppingCartTest -->
+      <class name="tests.AddProducttoCompareTest">
+        <methods>
+          <include name="CompareProducts"/>
+          <include name="searchfor2ndProductandaddtocompare"/>
+          <include name="ScreenShotonFailure"/>
+          <include name="StopDriver"/>
+          <include name="ClearCompareList"/>
+          <include name="StartDriver"/>
+          <include name="OpenCompareList"/>
+        </methods>
+      </class> <!-- tests.AddProducttoCompareTest -->
+      <class name="tests.AddProductReviewTest">
+        <methods>
+          <include name="UserLoginSuccessfully"/>
+          <include name="UserCanLogout"/>
+          <include name="ScreenShotonFailure"/>
+          <include name="StopDriver"/>
+          <include name="UserCanSearchForAProduct"/>
+          <include name="StartDriver"/>
+          <include name="UserCanAddReview"/>
+        </methods>
+      </class> <!-- tests.AddProductReviewTest -->
+    </classes>
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [NopCommerce Regression Suite] -->
